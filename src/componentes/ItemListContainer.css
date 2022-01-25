@@ -1,0 +1,11 @@
+.titulos{
+    margin-top: 50px;
+    text-align: center;
+    width: 500px;
+    background-color: rgb(56, 56, 56);
+    border-radius: 10px;
+    color: white;
+    font-size: 25px;
+    height: 50px;
+    padding: 5px;
+}
