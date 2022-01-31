@@ -1,0 +1,29 @@
+.itemCounter{
+    display: flex;
+    justify-content:center;
+    margin-top: 40px;
+}
+
+.quantity{
+    width: 100px;
+    background-color: white;
+    height: 30px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.boton{
+    color: white;
+    height: 30px;
+    border: none;
+    width: 30px;
+    background: none;
+    font-size: xx-large;
+}
+
+.advertencia{
+    color: white;
+    text-align: center;
+    font-size: large;
+}
