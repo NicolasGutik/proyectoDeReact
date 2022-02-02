@@ -1,13 +1,13 @@
 import './ItemListContainer.css';
-import ItemCount from '../ItemCount/ItemCount';
+import CardList from '../CardList/CardList';
+
 
 const ItemListContainer = (props) => {
 return <div>
     <center>
         <h1 className="titulos">{props.greetings}</h1>
     </center>
-    
-    <ItemCount valorInicial = {1} stock = {5}/>
+    <CardList/>
 </div>;
 };
 
