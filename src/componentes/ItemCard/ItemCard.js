@@ -1,6 +1,7 @@
 import './ItemCard.css';
 import ItemCount from '../ItemCount/ItemCount';
-
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faEye} from '@fortawesome/free-solid-svg-icons'
 
 
 
@@ -11,7 +12,7 @@ const ItemCard = (props) => {
         <img className="img" src={props.img}/>
         <h1>{props.nombre}</h1>
         <p>${props.precio}</p>
-        <a href="#">Leer más</a>
+        <FontAwesomeIcon icon={faEye}/>
       </div>
       <ItemCount valorInicial = {1} stock = {5}/>
     </div>

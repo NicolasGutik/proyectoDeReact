@@ -46,12 +46,12 @@ const CardList = () => {
 
 
 const InfoCards = [
-        {img:"https://i.imgur.com/uNFUNHy.jpg", nombre:"Diamante", precio:100, id:"D"}, 
-        {img:"https://i.imgur.com/HjKpGRV.jpg", nombre:"Esmeralda", precio:100, id:"E"},
-        {img:"https://i.imgur.com/vItApdA.jpg", nombre:"Amatista", precio:100, id:"A"},
-        {img:"https://i.imgur.com/9z7LlNS.jpg", nombre:"Zafiro", precio:100, id:"Z"},
-        {img:"https://i.imgur.com/1JHVg0z.jpg", nombre:"Rubi", precio:100, id:"R"},
-        {img:"https://i.imgur.com/3nEFd6y.jpg", nombre:"Onix", precio:100, id:"O"},
+        {img:"https://i.imgur.com/89Q1gLp.jpg", nombre:"Diamante", precio:100, id:"D"}, 
+        {img:"https://i.imgur.com/ZEoVdq2.jpghttps://i.imgur.com/ZEoVdq2.jpg", nombre:"Esmeralda", precio:100, id:"E"},
+        {img:"https://i.imgur.com/mZnYwJf.jpg", nombre:"Amatista", precio:100, id:"A"},
+        {img:"https://i.imgur.com/cRVZG9X.jpg", nombre:"Zafiro", precio:100, id:"Z"},
+        {img:"https://i.imgur.com/cSqKd5u.jpg", nombre:"Rubi", precio:100, id:"R"},
+        {img:"https://i.imgur.com/oYV85XZ.jpg", nombre:"Onix", precio:100, id:"O"},
         ]
 
 
