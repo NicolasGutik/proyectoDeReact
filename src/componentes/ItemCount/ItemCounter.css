@@ -27,3 +27,29 @@
     text-align: center;
     font-size: large;
 }
+
+.botonCarrito{
+    color: rgb(138, 69, 223);
+    width: 100px;
+    height: 40px;
+    background-color : transparent;
+    border: 2px solid rgb(138, 69, 223);
+    outline: inherit;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: all 0.3s;
+}
+
+.botonCarrito:hover {
+    color: white;
+    background-color: rgb(138, 69, 223);
+}
+
+.AñadirCarrito{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: none;
+}

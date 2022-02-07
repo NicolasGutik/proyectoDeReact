@@ -1,8 +1,7 @@
 //Componentes
 import NavBar from './componentes/NavBar/NavBar';
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
-import CardList from './componentes/CardList/CardList';
-
+import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer';
 // APRENDER=> sisi: spread operator, destructuring, promise (promesas), let, var, arrow functions, string como template literals, map, métodos de arrays (foreach, map, find, filter)
 
 
@@ -14,6 +13,7 @@ const App = () => {
       <header>
         <NavBar/>
         <ItemListContainer  greetings="Bienvenido a GemStore!" />
+        <ItemDetailContainer/>
       </header>
     </>
   );

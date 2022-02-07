@@ -19,12 +19,17 @@
     font-size: x-large;
 }
 
+.NavBar li:hover{
+    color: rgb(138, 69, 223);
+}
+
 .NavBar li{
     margin-left: 100px;
 }
 
 #imgLogoPagina{
-    width: 80px;
-    height: 70px;
-    margin: 20px;
+    width: 70px;
+    height: 60px;
+    margin: 25px;
+    filter: drop-shadow(0 10px 5px rgb(0, 0, 0));
 }

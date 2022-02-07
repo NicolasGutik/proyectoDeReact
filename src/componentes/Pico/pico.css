@@ -1,0 +1,27 @@
+.pico{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+
+.imgPico {
+    width: 50px;
+    pointer-events: none;
+    filter: drop-shadow(0 20px 8px rgb(0, 0, 0,2))
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .imgPico{
+        animation: imgPico infinite 2.5s ease-in-out;
+    }
+}
+
+@keyframes imgPico {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

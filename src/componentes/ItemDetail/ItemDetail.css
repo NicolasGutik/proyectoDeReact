@@ -1,0 +1,59 @@
+
+.containerDetail{
+    display: flex;
+    width: 600px;
+    margin: 40px;
+    background-color: rgba(0, 0, 0, 0.335);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    
+}
+
+.cardDetail {
+    height: 500px;
+    width: 230px;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.25s;
+    color: white;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.5); 
+}
+
+.imgDetail{
+    width: 230px;
+    object-fit: cover; 
+    object-position: center;
+}
+
+.card h4 {
+    font-weight: 600; 
+}
+
+.card p {
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300; 
+    margin-bottom: 25px;
+}
+
+.ojoDetail{
+    cursor: pointer;
+}
+
+.descDetail{
+    padding: 20px;
+}
+
+.descDetail h2{
+    color: white;
+}
+
+.desc{
+    width: 320px;
+    color: white;
+    font-size: 25px;
+}

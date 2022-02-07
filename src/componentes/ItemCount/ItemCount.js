@@ -27,8 +27,11 @@ const ItemCount = (props) => {
         setMensaje('No podes tener menos de un producto')
         setTimeout(()=>{
             setMensaje("")
-        },3000)
-    }
+            },3000)
+        }
+    }   
+    function añadir(){
+        console.log(`Se agrego: ${quantity} de ${props.item}`)
     }
 
     return(
@@ -43,6 +46,9 @@ const ItemCount = (props) => {
                 <div>
                     <button type="button" onClick={sumar} className="boton">+</button>
                 </div>
+            </div>
+            <div className="AñadirCarrito">
+                <button type="button" onClick={añadir} className="botonCarrito">Añadir al carrito</button>
             </div>
             <div className="ad">
                 <p className="advertencia">{mensaje}</p>
