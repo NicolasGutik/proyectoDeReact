@@ -6,7 +6,7 @@ import {faEye} from '@fortawesome/free-solid-svg-icons'
 
 const ItemDetail = (props) => {
     return (
-        <> 
+        <div className="divCard"> 
         <div className="containerDetail">  
         <div className="cardDetail">
             <img alt="img" className="imgDetail" src={props.item.img}/>
@@ -20,7 +20,7 @@ const ItemDetail = (props) => {
             <p className="desc">{props.item.desc}</p>
         </div>
         </div>
-        </>
+        </div>
     );
 };
 

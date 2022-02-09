@@ -1,3 +1,9 @@
+.divCard{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 
 .containerDetail{
     display: flex;
@@ -6,7 +12,6 @@
     background-color: rgba(0, 0, 0, 0.335);
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
     border-radius: 8px;
-    
 }
 
 .cardDetail {

@@ -22,7 +22,7 @@ const pedido = new Promise((resolve, reject) => {
 
     const onSuccessful = true
         if(onSuccessful){
-            setTimeout(() => resolve(InfoCards), 4000)
+            setTimeout(() => resolve(InfoCards), 3000)
         }else {
             setTimeout(() => reject('No hay productos'), 3000)
         }
@@ -36,9 +36,6 @@ useEffect(()=>{
 
 return(
     <div>
-        <center>
-            <h1 className="titulos">{props.greetings}</h1>
-        </center>
         {listItem.length > 0 ? <ItemList items = {listItem}/> : <Pico/>}
     </div>
 ) ;

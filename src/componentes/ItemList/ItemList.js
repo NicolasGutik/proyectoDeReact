@@ -5,7 +5,7 @@ const ItemList = (props) => {
     return(
         <> 
                 <div className="CardList">
-                    {props.items.map((card) => <Item img={card.img} nombre={card.nombre} precio={card.precio} key={card.id}/>)}
+                    {props.items.map((card) => <Item key={card.id} card={card}/>)}
                 </div>
         </>
 )}
