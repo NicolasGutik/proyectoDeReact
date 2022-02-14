@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 
 
 
-const Item = ({card}) => {
+const Item = ({card, items}) => {
     return (
     <div className="container">  
       <div className="card">
@@ -15,7 +15,9 @@ const Item = ({card}) => {
         <p>${card.precio}</p>
         <Link to={`/detail/${card.id}`}><FontAwesomeIcon className="ojo" icon={faEye}/></Link>
       </div>
-      <ItemCount valorInicial = {1} stock = {5} item = {card.nombre}/>
+      <div>
+        <ItemCount valorInicial = {1} stock = {5} items={items} card={card} key={card.id}/>
+      </div>
     </div>
     );
   };

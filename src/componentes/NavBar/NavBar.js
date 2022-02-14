@@ -16,7 +16,7 @@ return(
         <NavLink to="/Contacto">Contacto</NavLink>
     </ul>
 
-    <CartWidget></CartWidget>
+        <NavLink to="/Carrito"><CartWidget/></NavLink>
 </nav>)
 };
 

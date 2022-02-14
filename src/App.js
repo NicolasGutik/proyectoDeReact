@@ -10,6 +10,7 @@ import {
 import Productos from './views/Productos'
 import Contacto from './views/Contacto'
 import Home from './views/Home'
+import Carrito from './views/Carrito'
 // APRENDER=> sisi: spread operator, destructuring, promise (promesas), let, var, arrow functions, string como template literals, map, métodos de arrays (foreach, map, find, filter)
 
 
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/Contacto" element={<Contacto/>}/>
           <Route path="/Productos" element={<Productos/>}/>
           <Route path="/detail/:ItemId" element={<ItemDetailContainer/>}/>
+          <Route path="/Carrito" element={<Carrito/>}/>
         </Routes>
       </BrowserRouter>
     </>

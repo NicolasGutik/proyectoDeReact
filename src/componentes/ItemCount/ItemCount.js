@@ -1,16 +1,18 @@
 import './ItemCounter.css';
-
 import {useState} from "react"
 
-const ItemCount = (props) => {
+
+
+const ItemCount = ({valorInicial, stock, items, card}) => {
 
     const [mensaje, setMensaje] = useState("")
 
-    const [quantity,setQuantity] = useState(props.valorInicial)
+    const [quantity,setQuantity] = useState(valorInicial)
+
 
     function sumar(){
 
-        if (quantity < props.stock){
+        if (quantity < stock){
             setQuantity(quantity +1)
         } else {
             setMensaje('No hay mas stock')
@@ -21,7 +23,7 @@ const ItemCount = (props) => {
     }
 
     function restar(){
-        if (quantity > props.valorInicial){
+        if (quantity > valorInicial){
         setQuantity(quantity -1)
         } else {
         setMensaje('No podes tener menos de un producto')
@@ -30,9 +32,18 @@ const ItemCount = (props) => {
             },3000)
         }
     }   
-    function añadir(){
+
+
+/*     function añadir(){
         console.log(`Se agrego: ${quantity} de ${props.item}`)
+    } */
+
+    const {id} = card;
+
+    const añadir = (id) => {
+        const card = items.filter((card) => card.id === id)
     }
+
 
     return(
         <>
@@ -48,7 +59,7 @@ const ItemCount = (props) => {
                 </div>
             </div>
             <div className="AñadirCarrito">
-                <button type="button" onClick={añadir} className="botonCarrito">Añadir al carrito</button>
+                <button type="button" onClick={() => añadir(id)} className="botonCarrito">Añadir al carrito</button>
             </div>
             <div className="ad">
                 <p className="advertencia">{mensaje}</p>

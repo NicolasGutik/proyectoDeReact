@@ -16,7 +16,7 @@ const ItemDetail = (props) => {
             <ItemCount className="Contador" valorInicial = {1} stock = {5} item = {props.nombre}/>
         </div>
         <div className="descDetail">
-            <h2>Diamante</h2>
+            <h2>{props.item.nombre}</h2>
             <p className="desc">{props.item.desc}</p>
         </div>
         </div>
