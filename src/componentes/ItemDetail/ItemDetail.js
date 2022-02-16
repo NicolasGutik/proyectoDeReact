@@ -4,20 +4,22 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faEye} from '@fortawesome/free-solid-svg-icons'
 
 
-const ItemDetail = (props) => {
+const ItemDetail = ({item, nombre}) => {
+
+
     return (
         <div className="divCard"> 
         <div className="containerDetail">  
         <div className="cardDetail">
-            <img alt="img" className="imgDetail" src={props.item.img}/>
-            <h1>{props.item.nombre}</h1>
-            <p>${props.item.precio}</p>
+            <img alt="img" className="imgDetail" src={item.img}/>
+            <h1>{item.nombre}</h1>
+            <p>${item.precio}</p>
             <FontAwesomeIcon className="ojoDetail" icon={faEye}/>
-            <ItemCount className="Contador" valorInicial = {1} stock = {5} item = {props.nombre}/>
+            <ItemCount className="Contador" valorInicial = {1} stock = {5} item = {nombre}/>
         </div>
         <div className="descDetail">
-            <h2>{props.item.nombre}</h2>
-            <p className="desc">{props.item.desc}</p>
+            <h2>{item.nombre}</h2>
+            <p className="desc">{item.desc}</p>
         </div>
         </div>
         </div>

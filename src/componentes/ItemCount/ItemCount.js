@@ -1,14 +1,15 @@
 import './ItemCounter.css';
-import {useState} from "react"
+import {useState, useContext} from "react"
+import CartContext from "../Context/CartContext"
 
 
-
-const ItemCount = ({valorInicial, stock, items, card}) => {
+const ItemCount = ({valorInicial, stock, item}) => {
 
     const [mensaje, setMensaje] = useState("")
 
     const [quantity,setQuantity] = useState(valorInicial)
 
+    const {añadir} = useContext(CartContext)
 
     function sumar(){
 
@@ -33,16 +34,9 @@ const ItemCount = ({valorInicial, stock, items, card}) => {
         }
     }   
 
-
-/*     function añadir(){
-        console.log(`Se agrego: ${quantity} de ${props.item}`)
-    } */
-
-    const {id} = card;
-
-    const añadir = (id) => {
-        const card = items.filter((card) => card.id === id)
-    }
+function agregar(){
+    añadir(quantity, item)
+}
 
 
     return(
@@ -59,7 +53,7 @@ const ItemCount = ({valorInicial, stock, items, card}) => {
                 </div>
             </div>
             <div className="AñadirCarrito">
-                <button type="button" onClick={() => añadir(id)} className="botonCarrito">Añadir al carrito</button>
+                <button type="button" onClick={agregar} className="botonCarrito">Añadir al carrito</button>
             </div>
             <div className="ad">
                 <p className="advertencia">{mensaje}</p>

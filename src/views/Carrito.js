@@ -1,11 +1,16 @@
-import Item from 'component/Item/Item.js';
+import Item from '../componentes/Item/Item';
+import {useContext} from 'react'
+import CartContext from "../componentes/Context/CartContext"
+import './Carrito.css'
 
 const Carrito = () => {
 
+const {items} = useContext(CartContext)
+
+
     return(
         <>
-        <h1>Hola</h1>
-        {carrito.length === 0 ? (<p>0</p>) : (carrito.map((card => <Item key={card.id} card={card}></Item>)))}
+            {items.map(item =><Item card = {item}/>)}
         </>
     )
 }

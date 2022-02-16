@@ -7,7 +7,7 @@ import {useEffect} from 'react'
 
 const ItemListContainer = (props) => {
 
-const [listItem, setListItem] = useState([])
+/* info api (simulando)*/
 
 const InfoCards = [
         {img:"https://i.imgur.com/89Q1gLp.jpg", nombre:"Diamante", precio:8000, id:"D"}, 
@@ -17,6 +17,9 @@ const InfoCards = [
         {img:"https://i.imgur.com/oYV85XZ.jpg", nombre:"Onix", precio:50, id:"O"},
         {img:"https://i.imgur.com/cRVZG9X.jpg", nombre:"Zafiro", precio:10, id:"Z"},
     ]
+
+const [listItem, setListItem] = useState([])
+
 
 const pedido = new Promise((resolve, reject) => {
 
@@ -42,3 +45,5 @@ return(
 };
 
 export default ItemListContainer;
+
+
