@@ -1,2 +1,10 @@
-.container{
+.CartList{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: start;
+}
+
+p{
+    color: white
 }

@@ -1,16 +1,19 @@
-import Item from '../componentes/Item/Item';
+import ItemCart from '../componentes/ItemCart/ItemCart';
 import {useContext} from 'react'
 import CartContext from "../componentes/Context/CartContext"
 import './Carrito.css'
 
 const Carrito = () => {
 
-const {items} = useContext(CartContext)
+const {items, total} = useContext(CartContext)
 
 
     return(
         <>
-            {items.map(item =><Item card = {item}/>)}
+        <div className="CartList">
+            {items.map(item =><ItemCart card = {item}/>)}
+        </div>
+        <p>${total}</p>
         </>
     )
 }

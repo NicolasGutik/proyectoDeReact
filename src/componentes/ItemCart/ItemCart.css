@@ -1,0 +1,49 @@
+
+.container{
+    display: flex;
+    flex-flow: column;
+    width: 230px;
+    margin: 40px;
+}
+
+.card {
+    width: 230px;
+    height: 340px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: rgba(0, 0, 0, 0.335);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px); 
+    color: white;
+
+}
+
+.card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.5); 
+}
+
+.card img {
+    width: 230px;
+    object-fit: cover; 
+    object-position: center;
+}
+
+.card h4 {
+    font-weight: 600; 
+}
+
+.card p {
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300; 
+    margin-bottom: 25px;
+}
+
+.ojo{
+    cursor: pointer;
+    color: white;
+}

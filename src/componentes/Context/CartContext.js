@@ -6,17 +6,45 @@ export const CartContextProvider = ({children}) =>{
     
 const [quantity, setQuantity] = useState(0)
 const [items, setItems] = useState([])
+const [total, setTotal] = useState(0)
 
+const enCarrito = (id) =>{
+    const found = items.find(item => item.id === id)
+    return found
+}
 
 
 function añadir(cantidad, item){
-    setItems(
-        [...items, item]
-    )
-    setQuantity(quantity + cantidad)
-    console.log(items)
-}
 
+    setQuantity(quantity + cantidad)
+    console.log(item.precio)
+    setTotal(total + item.precio * cantidad)
+
+    if(enCarrito(item.id)){
+        setItems(items.map((prod)=>{
+            if(prod.id === item.id){
+                prod.quantity += cantidad
+            }
+            return prod
+        }))
+    }else{
+        const newItem = {
+            ...item,
+            quantity:cantidad
+        }
+        setItems([...items, newItem])
+    }
+console.log(items)
+        
+/*     enCarrito(item.id) ? setItems(items.map((prod)=>{
+        if(prod.id === item.id){
+            prod.quantity += cantidad
+        }
+        return prod
+    }))
+    :setItems([...items, {...items, quantity:cantidad}]) */
+    
+}
 
 
     return(
@@ -24,7 +52,7 @@ function añadir(cantidad, item){
             quantity,
             añadir,
             items,
-        
+            total,
         }}>
             {children}
         </CartContext.Provider>
