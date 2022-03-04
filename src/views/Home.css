@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+.fondo{
+    height: 800px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.containerT{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerT span {
+    width: 100%;
+    font-size: 150px;
+    font-weight: bold;
+    position: relative;
+    font-family: 'Chakra Petch', sans-serif;
+    font-family: "Fredoka One";
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    list-style: none;
+    text-decoration: none;
+}
+.containerT span::before {
+    width: 100%;
+    content: var(--l);
+    position: absolute;
+    transform: scale(1.1);
+    filter: blur(25px);
+}
+
+.containerT span:hover {
+    width: 100%;
+    filter: contrast(250%);
+}
+.containerT span:nth-child(1) {
+    width: 100%;
+    color: rgb(138, 69, 223);
+}
+
+.titulo{
+    --l: 'GemStore';
+}
+

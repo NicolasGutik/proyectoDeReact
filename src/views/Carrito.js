@@ -6,8 +6,7 @@ import {Link} from 'react-router-dom';
 
 const Carrito = () => {
 
-const {items, total} = useContext(CartContext)
-
+const {items, total, limpiar} = useContext(CartContext)
 
     return(
         <>
@@ -15,11 +14,21 @@ const {items, total} = useContext(CartContext)
             {items.map(item =><ItemCart card = {item}/>)}
         </div>
         {items.length > 0 ? 
-        <p className="precioTotal">Total a pagar : ${total}</p> : 
+        
+        <div className="accionesCarrito">
+            <p className="precioTotal">Total a pagar : ${total}</p>
+            <div className="botonesCarrito">
+                <p><button type="button" className="botonPagar">Ir a pagar</button></p>
+                <p><button type="button" className="botonLimpiar" onClick={limpiar}>Limpiar Carrito</button></p>
+            </div>
+        </div>
+
+        : 
+
         <div className="nadaCarrito">
             <div className="nadaCarritoBox">
                 <p className="nadaCarritoMsj">Aún no tienes nada en el carrito</p>
-                <Link to="/Productos">
+                <Link to="/Productos" style={{ textDecoration: 'none' }}>
                     <div className="irAComprar">
                         <button type="button" className="botonComprar">Ir a comprar</button>
                     </div>

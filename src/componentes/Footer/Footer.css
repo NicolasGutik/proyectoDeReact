@@ -1,0 +1,18 @@
+.main-footer{
+    color: rgba(255, 255, 255, 0.226);
+    padding-top: 3em;
+    position: relative;
+    width: 100%;
+}
+
+hr{
+    border: none;
+    height:1px;
+    background: rgba(255, 255, 255, 0.226);
+    width: 80%;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}

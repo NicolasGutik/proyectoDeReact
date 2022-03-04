@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap');
+
 
 .Navigation{
     display: flex;
@@ -27,6 +29,7 @@
     margin-left: 100px;
     text-decoration: none;
     color: white;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 #imgLogoPagina{

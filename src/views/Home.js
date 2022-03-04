@@ -1,11 +1,17 @@
+import './Home.css'
+import {Link} from 'react-router-dom';
 
 const Home = () => {
 
     return(
         <>
-        <center>
-            <h1 className="titulos">Bienvenidos a Gadgets Bay</h1>
-        </center>
+        <div className="fondo">
+        <div class="containerT">
+                <Link to="/Productos" style={{ textDecoration: 'none' }}>
+                    <span className="titulo" >GemStore</span>
+                </Link>
+        </div>
+        </div>
         </>
     )
 }

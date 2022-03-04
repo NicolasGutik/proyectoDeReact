@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap');
 
 .container{
     display: flex;
@@ -32,8 +33,8 @@
     object-position: center;
 }
 
-.card h4 {
-    font-weight: 600; 
+.card h1{ 
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 .card p {
@@ -41,6 +42,7 @@
     font-size: 16px;
     font-weight: 300; 
     margin-bottom: 25px;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 .ojo{

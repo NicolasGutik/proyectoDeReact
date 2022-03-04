@@ -11,6 +11,7 @@ import Productos from './views/Productos'
 import Contacto from './views/Contacto'
 import Home from './views/Home'
 import Carrito from './views/Carrito'
+import Footer from './componentes/Footer/Footer'
 import { CartContextProvider } from './componentes/Context/CartContext';
 // APRENDER=> sisi: spread operator, destructuring, promise (promesas), let, var, arrow functions, string como template literals, map, métodos de arrays (foreach, map, find, filter)
 
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="/Carrito" element={<Carrito/>}/>
         </Routes>
       </BrowserRouter>
+      <Footer/>
       </CartContextProvider>
     </>
   );

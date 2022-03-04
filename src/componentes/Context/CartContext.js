@@ -46,6 +46,10 @@ console.log(items)
     
 }
 
+function limpiar(){
+    setItems([])
+}
+
 
     return(
         <CartContext.Provider value={{
@@ -53,6 +57,7 @@ console.log(items)
             añadir,
             items,
             total,
+            limpiar,
         }}>
             {children}
         </CartContext.Provider>

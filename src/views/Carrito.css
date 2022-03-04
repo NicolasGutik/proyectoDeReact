@@ -8,11 +8,12 @@
 .precioTotal{
     color: white;
     background-color: rgb(138, 69, 223);
-    width: 200px;
-    height: 50px;
+    width: 210px;
+    height: 35px;
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.479); 
-    margin-left: 45px;
     border-radius: 7px;
+    text-align: center;
+    padding-top: 10px;
 }
 
 .nadaCarrito{
@@ -68,4 +69,51 @@
     justify-content: center;
     vertical-align: middle;
     align-items: none;
+}
+
+.botonPagar{
+    color: rgb(138, 69, 223);
+    width: 100px;
+    height: 40px;
+    background-color : transparent;
+    border: 2px solid rgb(138, 69, 223);
+    outline: inherit;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.botonPagar:hover {
+    color: white;
+    background-color: rgb(138, 69, 223);
+}
+
+.accionesCarrito{
+    display: flex;
+    flex-flow: column;
+    margin-left: 45px;
+}
+
+.botonesCarrito{
+    display: flex;
+    gap: 10px;
+}
+
+.botonLimpiar{
+    color: rgb(138, 69, 223);
+    width: 100px;
+    height: 40px;
+    background-color : transparent;
+    border: 2px solid rgb(138, 69, 223);
+    outline: inherit;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.botonLimpiar:hover {
+    color: white;
+    background-color: rgb(138, 69, 223);
 }
