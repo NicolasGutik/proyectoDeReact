@@ -13,7 +13,6 @@ return(
     <ul className="NavBar">
         <NavLink to="/">Home</NavLink>
         <NavLink to="/Productos">Productos</NavLink>
-        <NavLink to="/Contacto">Contacto</NavLink>
     </ul>
 
         <NavLink to="/Carrito" style={{ textDecoration: 'none' }}><CartWidget/></NavLink>

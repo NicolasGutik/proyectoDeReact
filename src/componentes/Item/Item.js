@@ -17,7 +17,7 @@ const Item = ({card}) => {
         <Link to={`/detail/${card.id}`}><FontAwesomeIcon className="ojo" icon={faEye}/></Link>
       </div>
       <div>
-        <ItemCount valorInicial = {1} stock = {5} item={card}/>
+        <ItemCount valorInicial = {1} stock = {card.stock} item={card}/>
       </div>
     </div>
     );

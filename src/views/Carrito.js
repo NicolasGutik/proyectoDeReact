@@ -18,7 +18,7 @@ const {items, total, limpiar} = useContext(CartContext)
         <div className="accionesCarrito">
             <p className="precioTotal">Total a pagar : ${total}</p>
             <div className="botonesCarrito">
-                <p><button type="button" className="botonPagar">Ir a pagar</button></p>
+                <Link to="/Shop" style={{ textDecoration: 'none' }}><p><button type="button" className="botonPagar">Ir a pagar</button></p></Link>
                 <p><button type="button" className="botonLimpiar" onClick={limpiar}>Limpiar Carrito</button></p>
             </div>
         </div>

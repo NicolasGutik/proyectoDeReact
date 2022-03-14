@@ -15,7 +15,7 @@ const ItemDetail = ({item, nombre}) => {
             <h1>{item.nombre}</h1>
             <p>${item.precio}</p>
             <FontAwesomeIcon className="ojoDetail" icon={faEye}/>
-            <ItemCount className="Contador" valorInicial = {1} stock = {5} item = {nombre}/>
+            <ItemCount className="Contador" valorInicial = {1} stock = {item.stock} item = {nombre}/>
         </div>
         <div className="descDetail">
             <h2>{item.nombre}</h2>
