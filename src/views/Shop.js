@@ -1,5 +1,5 @@
 import React from 'react'
-import {Button, TextField} from '@mui/material'
+import {TextField} from '@mui/material'
 import MessageID from '../componentes/MessageID/MessageID'
 import {useState, useContext} from "react"
 import CartContext from "../componentes/Context/CartContext"
@@ -37,17 +37,7 @@ const Shop = () => {
         setValues(initialState);
     };
 
-    const confirmPurchase = () => {
-        if (items.length <= 0) {
-            swal({
-            title: "No items in Cart",
-            icon: "error",
-            button: "OK",
-        });
-        } else {
-            buyItem();
-        }
-    };
+
 
 return (
 <>
@@ -89,8 +79,8 @@ return (
             sx={{ margin: "10px", width: "300px", color: "white", input: { color: 'white' } }}
             />
 
-            <button className="btnSendAction" onClick={() => confirmPurchase()}>
-            <b>CONFIRM PURCHASE</b>
+            <button className="btnSendAction">
+            <b>Confirmar Comprar</b>
             </button>
         </form>
         <Link to={"/Productos"}>
